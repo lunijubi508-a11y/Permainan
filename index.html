@@ -10,73 +10,180 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #020617);
+            background: linear-gradient(135deg, #020617, #0f172a);
             color: white;
         }
 
         .container {
-            max-width: 850px;
+            max-width: 1100px;
             margin: auto;
-            padding: 70px 20px;
+            padding: 60px 20px;
+        }
+
+        .hero {
             text-align: center;
+            padding: 60px 20px;
         }
 
         h1 {
-            font-size: 30px;
-            margin-bottom: 25px;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            opacity: 0.7;
+            font-size: 18px;
+            margin-bottom: 35px;
         }
 
         img {
             width: 100%;
-            max-width: 520px;
-            margin: 25px 0;
-            border-radius: 14px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-        }
-
-        p {
-            line-height: 1.7;
-            opacity: 0.85;
-            font-size: 16px;
+            max-width: 600px;
+            border-radius: 18px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            margin: 30px 0;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 35px;
-            padding: 14px 34px;
+            margin-top: 25px;
+            padding: 15px 38px;
             background: linear-gradient(135deg, #38bdf8, #0ea5e9);
             color: white;
             text-decoration: none;
-            border-radius: 12px;
+            border-radius: 14px;
             font-weight: bold;
             font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 25px rgba(14, 165, 233, 0.35);
+            transition: 0.3s;
+            box-shadow: 0 10px 30px rgba(14,165,233,0.35);
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(14, 165, 233, 0.55);
+            transform: translateY(-3px);
+            box-shadow: 0 18px 40px rgba(14,165,233,0.55);
+        }
+
+        .section {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            opacity: 0.7;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 16px;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 30px;
+            text-align: center;
+            opacity: 0.5;
+            font-size: 14px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        footer {
+        margin-top: 100px;
+        padding: 35px 20px;
+        text-align: center;
+        background: rgba(255,255,255,0.03);
+        border-top: 1px solid rgba(255,255,255,0.08);
+        font-size: 14px;
+        opacity: 0.6;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Pengalaman bermain games resmi PG Soft</h1>
+        <div class="hero">
+            <h1>Pengalaman bermain games resmi PG Soft</h1>
+            <div class="subtitle">
+                Visual modern • Animasi halus • Gameplay responsif
+            </div>
 
-        <img src="MJ.jpg">
+            <img src="MJ.jpg">
 
-        <p>
-            Bermain game resmi PG Soft memberikan pengalaman visual yang halus dengan animasi menarik dan desain modern.
-            Setiap permainan menghadirkan fitur unik, efek suara yang imersif, serta gameplay yang responsif.
-            Kombinasi grafis berkualitas dan mekanisme inovatif menciptakan hiburan yang seru, nyaman dimainkan,
-            dan menyenangkan bagi berbagai tipe pemain.
-        </p>
+            <br>
 
-        <a href="https://atgroup-link.id/ola62-masuk" class="btn">Masuk Sekarang</a>
+            <a href="https://atgroup-link.id/ola62-masuk" class="btn">Masuk Sekarang</a>
+        </div>
+        <div class="section">
+            <h2>Pengalaman Bermain yang Imersif</h2>
+            <p>
+                PG Soft dikenal dengan kualitas grafis yang detail, animasi yang lembut,
+                serta desain permainan yang modern. Setiap game dirancang untuk memberikan
+                pengalaman visual yang nyaman dan menarik di berbagai perangkat.
+            </p>
+        </div>
+        <div class="features">
+            <div class="card">
+                <h3>🎨 Grafis Modern</h3>
+                <p>Desain visual tajam dengan animasi yang halus dan menarik.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Gameplay Responsif</h3>
+                <p>Performa ringan dan nyaman dimainkan tanpa lag.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔊 Efek Suara Imersif</h3>
+                <p>Kombinasi audio yang meningkatkan pengalaman bermain.</p>
+            </div>
+        </div>
+
     </div>
+
+    <footer>
+        © 2026 • Informational Website  
+        <br><br>
+        <a href="#">Privacy Policy</a> • 
+        <a href="#">Terms of Service</a>
+    </footer>
 
 </body>
 </html>
-
